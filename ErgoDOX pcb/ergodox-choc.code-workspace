@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.windows": {
+			"PATH": "C:\\Users\\janmu\\.platformio\\penv\\Scripts;C:\\Users\\janmu\\.platformio\\penv;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;D:\\ProgramFiles\\Python37-32\\Scripts\\;D:\\ProgramFiles\\Python37-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\STMicroelectronics\\STM32 ST-LINK Utility\\ST-LINK Utility;D:\\ProgramFiles\\Git\\cmd;D:\\ProgramFiles\\TortoiseGit\\bin;C:\\Program Files\\Microsoft VS Code\\bin;D:\\ProgramFiles\\Microsoft VS Code Insiders\\bin;C:\\Users\\janmu\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;D:\\ProgramFiles\\Python37-32\\Scripts\\;D:\\ProgramFiles\\Python37-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\STMicroelectronics\\STM32 ST-LINK Utility\\ST-LINK Utility;D:\\ProgramFiles\\Git\\cmd;D:\\ProgramFiles\\TortoiseGit\\bin;C:\\Program Files\\Microsoft VS Code\\bin;D:\\ProgramFiles\\Microsoft VS Code Insiders\\bin;C:\\Users\\janmu\\AppData\\Local\\Microsoft\\WindowsApps",
+			"PLATFORMIO_CALLER": "vscode"
+		},
+		"files.associations": {
+			"typeinfo": "cpp",
+			"vector": "cpp",
+			"string": "cpp"
+		}
+	}
+}

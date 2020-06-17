@@ -36,8 +36,36 @@ def postionDiodeForSwitch(switch):
   # print(diode.GetReference())
   switchPosition    = switch.GetPosition()
   switchOrientation = switch.GetOrientation()
-  swOrDeg = switch.GetOrientationDegrees()
+  diodeOrientation  = switchOrientation
+
   print(switchPosition)
+ 
+
+  switchOrientation += {
+    "1:12": 900,
+    "1:13": 900,
+    "1:9": 900,
+    "1:10": 900
+  }.get(switchId, 0)
+
+  diodeOrientation += {
+    "1:12": 900,
+    "1:13": 900,
+    "1:9": 900,
+    "1:10": 900,
+    "5:11": 1800,
+    "4:11": 1800,
+    "3:11": 1800,
+    "2:11": 1800,
+    "2:11": 1800,
+  }.get(switchId, 0)
+
+ 
+  # if(switchId == "1:12"):
+    # print("HERE")
+    # switchOrientation += 900
+    # diodePosition = switchPosition + pcbnew.wxPoint((8300000 * math.sin(math.radians(switchOrientation/10 +90 ))), (8300000 * math.cos(math.radians(switchOrientation/10 +90))))
+  
   diodePosition = switchPosition + pcbnew.wxPoint((8300000 * math.sin(math.radians(switchOrientation/10))), (8300000 * math.cos(math.radians(switchOrientation/10))))
   
   # diodePosition = rotate(switchPosition, diodePosition, switchOrientation * 10)
@@ -45,7 +73,7 @@ def postionDiodeForSwitch(switch):
   print(switchOrientation)
 
   diode.SetPosition(diodePosition) #switchPosition.__add__(pcbnew.wxPoint(10, 10)))
-  diode.SetOrientation(switchOrientation)
+  diode.SetOrientation(diodeOrientation)
 
 
 #ds=pcbnew.DRAWSEGMENT(pcb)
